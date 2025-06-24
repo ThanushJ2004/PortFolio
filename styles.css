@@ -1,0 +1,380 @@
+/* Reset */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+  scroll-padding-top: 80px;
+  height: 100%;
+}
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #d0d7de;
+  color: #1a1a1a;
+  line-height: 1.55;
+  overflow-x: hidden;
+  
+  /* Center everything horizontally */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #023e8a;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 1rem;
+  margin: 0;
+  gap: 1.5rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #90e0ef;
+}
+
+html {
+  scroll-padding-top: 80px; /* Adjust for fixed nav height */
+}
+
+.profile-photo {
+  display: block;
+  width: 300px;          /* size of the photo */
+  height: 300px;
+  object-fit: cover;     /* crop to fit */
+  border-radius: 50%;    /* make it circular */
+  margin: 0 auto 1.5rem auto; /* center horizontally and add bottom margin */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border: 3px solid #0077b6;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 3rem auto 5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center content inside container */
+  text-align: center;   /* center text by default */
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #0077b6 0%, #023e8a 100%);
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  max-width: 1000px;
+}
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+}
+header p {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #ade8f4;
+  letter-spacing: 0.1em;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #0077b6;
+  border-bottom: 3px solid #0077b6;
+  padding-bottom: 0.4rem;
+  letter-spacing: 0.12em;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* About Me */
+
+#about p {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+  max-width: 900px;
+  text-align: center
+}
+
+
+#about {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+  max-width: 900px;
+  text-align: center;
+  padding-top: 75px;
+}
+
+/* Projects */
+ .project {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid #0077b6;
+  border-radius: 10px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 6px 12px rgba(0, 119, 182, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* keep project text left-aligned for readability */
+ } 
+
+
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 119, 182, 0.3);
+}
+.project h3 {
+  color: #023e8a;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.project p {
+  margin: 0.25rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+.project strong {
+  color: #0077b6;
+}
+
+/* List for home products */
+.project ul {
+  margin-left: 1.5rem;
+  color: #444;
+  list-style-type: square;
+}
+.project ul li {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+#about-me {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg,  #009bb6 70%, #009bb6 80%);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 119, 182, 0.4);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#about-me h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+#about-me p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+/* Animate paragraphs with a small delay for each */
+#about-me p:nth-child(2) { animation-delay: 0.3s; }
+#about-me p:nth-child(3) { animation-delay: 0.6s; }
+#about-me p:nth-child(4) { animation-delay: 0.9s; }
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+/* Workshops */
+.workshop {
+  background: #e3f2fd;
+  padding: 1rem 1.5rem;
+  border-left: 6px solid #023e8a;
+  border-radius: 10px;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 3px 10px rgba(2, 48, 71, 0.12);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.workshop h3 {
+  color: #023e8a;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.workshop p {
+  color: #0d3b66;
+  font-weight: 600;
+}
+
+/* Skills & Achievements */
+ul.skills-list, ul.achievements-list, ul.leadership-list, ul.contact-list, ul.patent-list {
+  list-style-type: none;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  padding-left: 0;
+  text-align: left;
+}
+ul.skills-list li, ul.achievements-list li, ul.leadership-list li, ul.contact-list li, ul.patent-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+/* Images inside achievements and patent */
+.achievements-list img, .patent-list img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1rem 0 2rem 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact links */
+.contact-list a {
+  color: #0077b6;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-list a:hover {
+  color: #023e8a;
+  text-decoration: underline;
+}
+
+/* Leadership & Roles */
+section.leadership h3 {
+  color: #0077b6;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+section.leadership ul li {
+  font-weight: 500;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #0077b6;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-top: 5rem;
+  border-radius: 12px 12px 0 0;
+  user-select: none;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  section h2 {
+    font-size: 1.9rem;
+  }
+  body {
+    font-size: 16px;
+  }
+  .container {
+    margin: 2rem 1rem 3rem 1rem;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  section h2 {
+    font-size: 1.6rem;
+  }
+  .project {
+    padding: 1rem 1.2rem;
+  }
+  .workshop {
+    padding: 0.8rem 1rem;
+  }
+}
